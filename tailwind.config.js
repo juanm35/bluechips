@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         'bcDarkBlue': '#010F26',
         'bcWhite': '#FAFBFB',
-        'bcBrightBluw': '#08A7F1',
+        'bcBrightBlue': '#08A7F1',
         'bcDeepRed': '#D32F3F',
         'bcGrayishBlue': '#B5C4D8',
         'bcMediumGray': '#576779'
