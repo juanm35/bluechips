@@ -10,11 +10,9 @@ export default function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Bluechips - crypto</title>
             </Head>
-            <div className=''>
-                <Menu key={router.pathname} ></Menu>
-                <div className=''>
-                    <Component {...pageProps} />
-                </div>
+            <Menu key={router.pathname} ></Menu>
+            <div className='bg-bcDarkBlue'>
+                <Component {...pageProps} />
             </div>
         </>
     )
