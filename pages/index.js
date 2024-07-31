@@ -10,7 +10,6 @@ export default function Home() {
       </Head>
 
       <main className='flex flex-col justify-center h-screen'>
-        <p className='m-auto text-bcWhite text-6xl'>Coming soon...</p>
         <div className=''>
          <img src="/logo.jpeg" alt="mainLogo" />
         </div>
