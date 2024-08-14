@@ -22,20 +22,22 @@ const Home = () => {
   };
 
   return (
-    <div className='flex flex-col p-8 min-h-screen'>
+    <div className='flex flex-col p-8 min-h-screen w-full'>
       <img src="/logo.jpeg" alt="mainLogo" className='h-64 my-24 mx-auto' />
-      <div className="relative flex flex-col gap-32 lg:flex-row lg:gap-4 justify-around items-center">
+      <div className="w-full relative flex flex-col gap-32 lg:flex-row lg:gap-4 justify-around items-center">
         {/* Carousel for mobile */}
-        <div className="flex lg:hidden justify-between items-center w-full text-bcWhite text-6xl">
-          <button onClick={prevCard} className="p-2">
+        <div className="w-full flex lg:hidden justify-between items-center justify-center w-full text-bcWhite text-4xl sm:text-6xl">
+          <button onClick={prevCard} className="p-2 w-1/4">
             &#9664; {/* Left arrow */}
           </button>
-          <FeatureCard 
-            title={cards[currentCard].title} 
-            Icon={cards[currentCard].Icon} 
-            link={cards[currentCard].link} 
-          />
-          <button onClick={nextCard} className="p-2">
+          <div className='w-1/2'>
+            <FeatureCard 
+              title={cards[currentCard].title} 
+              Icon={cards[currentCard].Icon} 
+              link={cards[currentCard].link} 
+            />
+          </div>
+          <button onClick={nextCard} className="p-2 w-1/4">
             &#9654; {/* Right arrow */}
           </button>
         </div>
