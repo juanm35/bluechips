@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
                 <title>Bluechips - crypto</title>
             </Head>
             <Menu key={router.pathname} ></Menu>
-            <div className='bg-bcDarkBlue min-h-screen'>
+            <div className='bg-bcDarkBlue h-fit'>
                 <Component {...pageProps} />
             </div>
         </>

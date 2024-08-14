@@ -22,7 +22,7 @@ const Home = () => {
   };
 
   return (
-    <div className='flex flex-col p-8'>
+    <div className='flex flex-col p-8 min-h-screen'>
       <img src="/logo.jpeg" alt="mainLogo" className='h-64 my-24 mx-auto' />
       <div className="relative flex flex-col gap-32 lg:flex-row lg:gap-4 justify-around items-center">
         {/* Carousel for mobile */}
